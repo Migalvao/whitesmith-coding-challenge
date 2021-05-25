@@ -9,7 +9,7 @@ const app = express();
 
 //SETUP DATABASE
 mongoose.Promisse = global.Promisse;
-mongoose.connect("mongodb://" + os.hostname() + "/ws-coding-challenge", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ws-coding-challenge", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
