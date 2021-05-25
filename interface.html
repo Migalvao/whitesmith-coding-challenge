@@ -1,0 +1,128 @@
+<!--
+    File Name:  CRUD.html
+    Author:     Charles Kann 
+    Date:       7/8/2017
+    Purpose:    To define the Map Example CRUD application.
+    Modification History: 7/8/2017 - Initial Release
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin interface </title>
+    <link rel="stylesheet" type="text/css" href="CRUD.css">
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.JavaScript">
+    </script>
+    <script src="Map.JavaScript">
+    </script>
+    <script src="CRUDLibrary.JavaScript">
+    </script>
+    <script src="CRUDOnload.JavaScript">
+    </script>
+
+    <script>
+        // Global records array declaration
+        var records = new Array();
+    </script>
+    -->
+</head>
+
+<body>
+
+    <div class="header-icon">
+        <!--<image src="GRI_logo.png" />-->
+    </div>
+    <div class="header-desc">
+        <h1>Map Example</h1>
+        <p class="header-p">
+            Example map input screen
+        </p>
+    </div>
+    <div class="header-menu">
+        <p class="header-p">
+            Home File About
+        </p>
+    </div>
+    </header>
+
+    <section>
+        <h1> Data records </h1>
+
+        <select size="7">
+                    </select>
+
+        <input type="button" value="Create" />
+        <input type="button" value="Read  " />
+        <input type="button" value="Update" />
+        <input type="button" value="Delete" />
+        </p>
+
+
+
+        <input type="button" value="Save To File" id="saveFile" />
+        <input type="button" value="Read From File" />
+        </p>
+        <p>
+            <input type="text" size="50" />
+        </p>
+    </section>
+
+    <section />
+
+
+    <label for="title">Title</label>
+    <input type="text" size="20">
+    </p>
+
+
+    Map Options<br>
+    <label for="resize">Allow map to be resized:
+                </label>
+    <input type="checkbox" />
+    <br/>
+    <label for="recenter">
+                    Allow map to be recentered:
+                </label>
+    <input type="checkbox" checked />
+    </p>
+
+
+    Type of Map<br>
+    <input type="radio" name="maptype" value="XYZMap" />
+    <label for="XYZMap">XYZ map </label>
+    <br/>
+    <input type="radio" name="maptype" value="StamenMap" checked />
+    <label for="StamenMap">Stamen Map
+                </label>
+    </p>
+
+
+    Screen Size<br>
+    <input type="radio" name="screenSize" checked value="600x480" />
+    <label for="XYZMap">600x480 </label>
+    <br/>
+    <input type="radio" name="screenSize" value="1024x768" />
+    <label for="1024x768">1024x768 </label>
+    <br/>
+    <input type="radio" name="screenSize" value="1280x800" />
+    <label for="XYZMap">1280x800 </label>
+    </p>
+
+
+
+    Center of Map<br>
+    <label for="lat">Latitude            
+                </label>
+    <input type="number" value="-77" /><br />
+    <label for="long">Longitude </label>
+    <input type="number" value="39" />
+    </p>
+    <input type="button" value="Save" />
+    <input type="button" value="Save" />
+    <input type="button" value="Cancel" />
+    </section>
+</body>
+
+</html>

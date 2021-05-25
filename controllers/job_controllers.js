@@ -19,7 +19,6 @@ module.exports = {
     getSingleJob: async(req, res, next) => {
         // Updates given job position
         const id = req.query.id;
-        console.log(id);
 
         try {
             const existingJob = await job.findOne({ _id: id });
