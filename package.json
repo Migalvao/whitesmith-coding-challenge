@@ -4,7 +4,8 @@
     "description": "API for job positions @ whitesmith's website",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon app.js"
+        "start dev": "nodemon app.js",
+        "start": "node app.js"
     },
     "author": "Miguel Galvão",
     "license": "ISC",
