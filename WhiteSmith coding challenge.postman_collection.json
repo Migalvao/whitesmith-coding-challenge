@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "ce0ded1c-a818-4869-adda-67dfdb0ad0b3",
+		"name": "WhiteSmith coding challenge",
+		"description": "# Introduction\nAPI for a bakckend of a website to handle job positions/careers.\n\n# Overview\nUsing NodeJS and MongoDB\n\n# Authentication\nNone\n\n# Error Codes\n200 for OK status and 404 for not found\n\n# Rate limit\nNot applicable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "title, description, regime, department, duration (optional), is_available (optional)"
+				},
+				"url": {
+					"raw": "/jobs",
+					"path": [
+						"jobs"
+					]
+				},
+				"description": "Create new job"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"job title\",\r\n    \"description\": \"Job description\",\r\n    \"regime\": \"Job regime\",\r\n    \"department\": \"Department\",\r\n    \"duration\": duration,\r\n    \"is_available\" is_available\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/jobs",
+							"path": [
+								"jobs"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/jobs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/jobs",
+					"path": [
+						"jobs"
+					]
+				},
+				"description": "Get all available jobs"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/jobs",
+							"path": [
+								"jobs"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/jobs/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/jobs/all",
+					"path": [
+						"jobs",
+						"all"
+					]
+				},
+				"description": "Get all jobs, regardless of whether they are available or not"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/jobs/all",
+							"path": [
+								"jobs",
+								"all"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/jobs/job?id=job_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/jobs/job?id=job_id",
+					"path": [
+						"jobs",
+						"job"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "job_id"
+						}
+					]
+				},
+				"description": "Get a single job, with job id in params"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/jobs/job?id=job_id",
+							"path": [
+								"jobs",
+								"job"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "job_id"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/jobs",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "id, [params to change]"
+				},
+				"url": {
+					"raw": "/jobs",
+					"path": [
+						"jobs"
+					]
+				},
+				"description": "Update single job"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "id, [params to change]"
+						},
+						"url": {
+							"raw": "/jobs",
+							"path": [
+								"jobs"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/jobs?id=job_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/jobs?id=job_id",
+					"path": [
+						"jobs"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "job_id"
+						}
+					]
+				},
+				"description": "Delete single job, with job id in params"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/jobs?id=job_id",
+							"path": [
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "job_id"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
