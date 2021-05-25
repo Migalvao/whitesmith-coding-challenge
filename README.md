@@ -25,10 +25,15 @@ Create job:
 
 route: /jobs
 method: POST
-body: {
-title (must),
-description (must),
-regime (must),
-department (must),
+body:
 
+```json
+{
+  "title": "Mandatory job title",
+  "description": "Mandatory job description (must)",
+  "regime": "Mandatory job regime",
+  "department": "Mandatory department for the job position",
+  "duration": 12,
+  "is_available": true
 }
+```
