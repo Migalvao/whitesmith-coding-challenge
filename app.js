@@ -2,12 +2,14 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const os = require("os");
+var hostname = os.hostname();
 
 const app = express();
 
 //SETUP DATABASE
 mongoose.Promisse = global.Promisse;
-mongoose.connect("mongodb://localhost/ws-coding-challenge", {
+mongoose.connect("mongodb://" + os.hostname() + "/ws-coding-challenge", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
